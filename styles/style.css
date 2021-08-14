@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Montserrat+Alternates:wght@500&display=swap");
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(#9cadce, #c29ca6e3) no-repeat;
+}
+
+
+/*nav*/
+
+.nav-container {
+    display: flex;
+    margin: auto;
+    padding-top: 50px;
+    width: 40rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.set-range:hover {
+    cursor: default;
+    color: rgb(88, 114, 230);
+}
+
+
+/*play game*/
+
+.play-game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #c884a6;
+    height: 300px;
+    margin: 50px auto;
+    width: 45rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px 0.2px rgb(167, 166, 166);
+}
+
+.result {
+    height: 50px;
+    width: 175px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    border: rgb(53, 52, 52) solid 2.3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0.2px rgb(167, 166, 166);
+}
+
+#result-number {
+    margin-top: 10px;
+}
+
+
+/*user interaction*/
+
+.user-interaction {
+    margin: auto;
+    width: 40rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 10rem;
+}
+
+.score-panel {
+    width: 13rem;
+}
+
+.game-info {
+    margin-top: 0;
+}
+
+.btn {
+    width: 180px;
+    height: 50px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px 0.2px rgb(167, 166, 166);
+}
+
+.btn:hover {
+    background: rgb(223, 223, 223);
+}
+
+#guess {
+    height: 50px;
+    width: 10.8rem;
+    background: none;
+    text-align: center;
+    font-weight: bold;
+    border: rgb(53, 52, 52) solid 2.3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0.2px rgb(167, 166, 166);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Guess the Number</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <button class="btn" type="button">How to Play?</button>
+            <h2><span class="decrease-range set-range"><</span> Between 1 and <span id="range">20</span> </span><span class="increase-range set-range">></span></h2>
+        </div>
+        <section class="play-game-container">
+            <div class="play-game">
+                <h1>Guess the Number!</h1>
+                <div class="result">
+                    <h1 id="result-number">?</h1>
+                </div>
+                <button class="btn again-btn" type="button">Again!</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="user-interaction">
+            <div class="user-input">
+                <input id="guess" type="number">
+                <button class="btn guess-btn" type="button">Guess!</button>
+            </div>
+            <div class="score-panel">
+                <h3 class="game-info predict-info">💭 Start guessing...</h3>
+                <h3 class="game-info">🏅 Score: <span id="score">20</span></h3>
+                <h3 class="game-info">🏆 High Score: <span id="high-score">0</span></h3>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
