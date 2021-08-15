@@ -28,6 +28,7 @@ body {
 
 .play-game-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -147,4 +148,110 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
     z-index: 1;
+}
+
+@media (max-width: 750px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .nav-container {
+        width: 90vw;
+    }
+    .play-game-container {
+        width: 90vw;
+    }
+    .user-interaction {
+        width: 80vw;
+        justify-content: center;
+        align-self: center;
+        column-gap: 10vw;
+    }
+}
+
+@media (max-width: 470px) {
+    body {
+        height: 100vh;
+    }
+    .nav-container {
+        width: 85vw;
+        font-size: 3.4vw;
+    }
+    .play-game-container {
+        padding-top: 2vh;
+        width: 90vw;
+        height: 40vw;
+        font-size: 3.4vw;
+    }
+    .play-game {
+        display: flex;
+        column-gap: 5vw;
+    }
+    .result {
+        width: 25vw;
+        height: 16vw;
+        box-sizing: border-box;
+    }
+    #result-number {
+        margin-top: 2.6vw;
+    }
+    .btn {
+        width: 25vw;
+        height: 16vw;
+        font-size: 3.4vw;
+    }
+    .user-interaction {
+        font-size: 4.2vw;
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-input {
+        margin-top: 3vh;
+        flex-direction: row;
+        column-gap: 5vw;
+        width: 100vw;
+        order: 2;
+        justify-content: center;
+    }
+    .score-panel {
+        width: 50vw;
+        order: 1;
+        align-self: center;
+    }
+    #guess {
+        width: 25vw;
+        height: 16vw;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-height: 650px) {
+    body {
+        font-size: 2vh;
+    }
+    /*nav*/
+    .nav-container {
+        padding-top: 8vh;
+    }
+    /*play game*/
+    .play-game-container {
+        height: 48vh;
+        margin: 6vh auto;
+    }
+    .result {
+        height: 8vh;
+        margin-bottom: 3vh;
+    }
+    #result-number {
+        margin-top: 2vh;
+    }
+    .user-input {
+        row-gap: 2vh;
+    }
+    .btn {
+        height: 8vh;
+    }
+    #guess {
+        height: 8vh;
+    }
 }
