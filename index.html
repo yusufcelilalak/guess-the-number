@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="nav-container">
-            <button class="btn" type="button">How to Play?</button>
+            <button class="btn how-to-btn" type="button">How to Play?</button>
             <h2><span class="decrease-range set-range"><</span> Between 1 and <span id="range">20</span> </span><span class="increase-range set-range">></span></h2>
         </div>
         <section class="play-game-container">
@@ -26,6 +26,18 @@
         </section>
     </header>
     <main>
+
+        <div class="how-to hidden">
+            <button class="close-how-to">&times;</button>
+            <h1>How to play?</h1>
+            <p>
+                This is a very simple game. The website will generate a random number according to the range and all you have to do is guessing this number. You can change the range by clicking
+                < ' and '>' buttons. Also keep in mind that the score will start from the limit of your range, and it will start to decrease after each of your wrong predictions. So, try not to waste your predictions to get high scores. <br><br> P.S. Enjoy your
+                    game! 🤠
+            </p>
+        </div>
+        <div class="overlay hidden"></div>
+
         <section class="user-interaction">
             <div class="user-input">
                 <input id="guess" type="number">
