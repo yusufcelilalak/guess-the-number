@@ -122,10 +122,9 @@ body {
     background: none;
 }
 
-
-/*.hidden {
+.hidden {
     display: none;
-}*/
+}
 
 .how-to {
     position: absolute;
