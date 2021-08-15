@@ -122,9 +122,10 @@ body {
     background: none;
 }
 
-.hidden {
+
+/*.hidden {
     display: none;
-}
+}*/
 
 .how-to {
     position: absolute;
@@ -253,5 +254,9 @@ body {
         width: 25vw;
         height: 16vw;
         box-sizing: border-box;
+    }
+    .how-to {
+        width: 70vw;
+        padding: 1.4rem;
     }
 }
